@@ -23,7 +23,7 @@ public:
 };
 
 // For a struct. The default is public.
-struct Student {
+struct Student1 {
     string name;
     int rollNo;
     float cgpa;
@@ -31,7 +31,7 @@ struct Student {
 
 // is equivalent to:
 
-struct Student {
+struct Student2 {
 public:
     string name;
     int rollNo;
@@ -61,12 +61,12 @@ protected:
 };
 int main() {
     // private protects the internal data of a class, while public provides the accessible interface through which outside code can interact with the class.
-    Student s;
+    Student1 s;
     // s.name = "Vagmin";   // Error
     // s.rollNo = 101;     // Error
 
     // Members declared under public: can be accessed from anywhere using the object.
-    Students stds;
+    Student2 stds;
     // Here, name, rollNo, and cgpa are publicly accessible.
     stds.name = "Vagmin";
     stds.rollNo = 23118023;
